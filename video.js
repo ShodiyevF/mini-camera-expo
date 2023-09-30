@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, Platform, Button, Image, SafeAreaView } from 'r
 import { useEffect, useState, useRef } from 'react';
 import * as MediaLibrary from 'expo-media-library'
 import { shareAsync } from 'expo-sharing'
+// import Video from 'react-native-video';
 import { Camera } from 'expo-camera'
 
 export default function RecordVideo(){
@@ -64,6 +65,7 @@ export default function RecordVideo(){
         return (
             <SafeAreaView style={styles.container}>
                 {/* <Image style={styles.preview} source={{ uri: "data:image/jpg;base64," + photo.base64}}/> */}
+                {/* <Video source={video.uri} paused={false} style={styles.preview} repeat={true}/> */}
                 <Button title={forwardText} onPress={shareVideo}/>
                 {hasMediaLebraryPermission ? <Button title='Saqlash' onPress={saveVideo}/> : undefined}
                 <Button title='Bekor qilish' onPress={() => setVideo(undefined)}/>
