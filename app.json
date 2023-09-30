@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "imagePicker",
+    "slug": "imagePicker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "photoPermission": "Allow $(PRODUCT NAME) to access your photos.",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "savePhotosPermission": "Allow $(PRODUCT NAME) to save photos.",
+          "isAccessMediaLocationEnabled": "true"
+        }
+      ]
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
